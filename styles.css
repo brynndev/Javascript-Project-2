@@ -1,0 +1,81 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF4F9;
+    color: #713D59;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Shop heading */
+h1 {
+    font-size: 3rem;
+    color: #E86FA5;
+    margin-bottom: 10px;
+}
+
+body > p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #9B6680;
+}
+
+/* Product grid */
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Individual product cards */
+.product-card {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(200, 100, 150, 0.15);
+    transition: transform 0.3s ease;
+}
+
+/* Card hover effect */
+.product-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Product emoji */
+.product-emoji {
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+/* Product names */
+.product-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Product prices */
+.product-card p {
+    color: #E86FA5;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Mobile layout */
+@media (max-width: 650px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+}
